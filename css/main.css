@@ -1,0 +1,249 @@
+/* Color Palette
+  White: #ffffff;
+  Black: #000000;
+  Medium Gray: #999999;
+  Light Gray: #dddddd;
+  Light blue: #99ffff;
+*/
+
+
+/*********** Begin Layout Styles ***********/
+body {
+background-image: url("../img/background cone.jpg");
+background-color: #00fffa
+}
+
+div.container {
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px; /* disable this line if you want full-width layouts */
+}
+
+header, main, footer {
+  padding: 15px;
+  margin: 15px;
+}
+
+/* phones (base layout is mobile-first) */
+header {
+  border: 3px solid #c4fffa ; /* disable this line once layout works */
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "Name"
+    "Logo";
+}
+
+main {
+  border: 3px solid #ffcccc ;  /* disable this line once layout works */
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "Carousel"
+    "Menu"
+    "Map";
+}
+
+footer {
+  border: 3px solid #c4fffa ; /* disable this line once layout works */
+  display: grid;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "Contact"
+    "Credits";
+}
+
+/* tablets and small laptops */
+@media (min-width: 600px) {
+
+  header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "Name Logo";
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "Carousel Carousel"
+      "Menu Map"
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "Contact Credits";
+  }
+}
+
+/* desktops */
+@media (min-width: 900px) {
+  header {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "Name Logo";
+  }
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "Carousel Carousel Carousel"
+      "Menu Menu Map"
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "Contact Credits";
+  }
+}
+
+div {
+   /*border: 1px solid #999999; /* disable this line once layout works */
+   /*text-align: center; /* disable this line once layout works */
+}
+
+main div {
+     /*min-height: 80px; /* disable this line once layout works */
+}
+
+div#Name {
+  grid-area: Name;
+}
+
+div#Logo {
+  grid-area: Logo;
+}
+
+div#Carousel {
+  grid-area: Carousel;
+  overflow: hidden;
+}
+
+div#Menu {
+  grid-area: Menu;
+}
+
+div#Map {
+  grid-area: Map;
+}
+
+div#Contact {
+  grid-area: Contact;
+}
+
+div#Credits {
+  grid-area: Credits;
+}
+
+/*********** End Layout Styles ***********/
+
+
+/*********** Begin Content Styles ***********/
+
+/* Headings */
+h1 {
+font-family: 'Nosifer', cursive;
+font-size: 50px;
+color:#ff99c8
+}
+
+h2 {
+  font-family: 'Nosifer', cursive;
+  font-size: 20px;
+  color: #00f4e8
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+/* Paragraphs and lists */
+
+p {
+
+}
+
+ol {
+
+}
+
+ul {
+
+}
+
+li {
+
+}
+
+/* tables */
+
+table {
+
+}
+
+caption {
+
+}
+
+tr {
+
+}
+
+th {
+
+}
+
+td {
+
+}
+
+/* images */
+img {
+max-width: 100%;
+}
+iframe { max-width: 100%;
+}
+
+/* links */
+
+a:link {
+
+}
+
+a:visited {
+
+}
+
+a:hover {
+
+}
+
+a:active {
+
+}
+
+/* forms */
+
+
+
+/*********** End Content Styles ***********/

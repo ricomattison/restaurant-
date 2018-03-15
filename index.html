@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Amazing Ice Cream Shop</title>
+  <link href="css/main.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/owl.theme.default.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+  <link rel="icon" type="image/jpg" sizes="32x32" href="img/cone.jpg"
+</head>
+
+<body>
+
+  <div class="container">
+
+    <header>
+      <div id="Name"><h1>Amazing Ice cream Shop</h1></div>
+      <div id="Logo"</div>
+        <div><img src="img/cone.jpg" alt="ice cream cone"></div>
+        </div>
+    </header>
+
+    <main>
+      <div id="Carousel">
+        <div class="owl-carousel owl-theme">
+        <div><img src="carousel/caramel.jpg" alt="caramel ice cream"></div>
+      <div><img src="carousel/cookies.jpg" alt="cookies n cream ice cream"></div>
+      <div><img src="carousel/mint.jpg" alt="mint ice cream"></div>
+      <div><img src="carousel/strawberry.jpg" alt="strawberry ice cream"></div>
+      <div><img src="carousel/vanilla.jpg" alt="vanilla ice cream"></div>
+      </div>
+    </div>
+
+      <div id="Menu"><a href="file:///C:/Users/rmatti1225/Downloads/web-design/Home%20Page-%20project/menu.html"><h2>Menu</h2></a></div>
+      <div id="Map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111438.31005549476!2d-81.16665095416407!3d29.210398153036547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e6db9425025683%3A0x366a3bb71dcb2aeb!2sDaytona+Beach%2C+FL!5e0!3m2!1sen!2sus!4v1519832892272" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+    </main>
+
+    <footer>
+      <div id="Contact"><h3>Contact us<br>(386)-486-8746</h3></div>
+
+      <div id="Credits"><h4>Rico M</h4></div>
+    </footer>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+  <!-- owl carousel stuff -->
+  <script src="js/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel({
+          dots: true,
+          items: 1,
+          loop: true,
+          margin: 10,
+          nav: false,
+          autoplay: true,
+          autoplayTimeout: 2500,
+          autoplayHoverPause: true,
+
+      })
+    });
+  </script>
+</body>
+</html>
